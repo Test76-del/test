@@ -58,7 +58,7 @@ class ItemAdapter(val context: Context) :
                 add_child.setOnClickListener {
                     val name = nameChild.text.toString()
 
-                    val activity = context as MainActivity
+                    val activity = context as DashboardActivity
                     dataModel = ViewModelProvider(activity).get(DetailViewModel::class.java)
 
                     if (!name.equals("")) {
